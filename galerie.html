@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Mini Galerie d'image</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <img src="img/martine_UTF8.jpg" alt="Martine écrit en UTF-8">
+    <img src="img/martine_space-cake.jpg" alt="Martine écrit en UTF-8" id="img">
+    <img src="img/martine_balayette.jpg" alt="Martine écrit en UTF-8" id="img">
+    <img src="img/martine_lapin.jpg" alt="Martine écrit en UTF-8" id="img">
+    <script>
+        $(document).ready(function () {
+            $("img").bind("click", function () {
+                document.querySelector("#img")
+            });
+        });
+    </script>
+</body>
+
+</html>
