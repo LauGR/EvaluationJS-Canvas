@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Le rectangle dans tous ses états</title>
+    <meta charset="UTF-8">
+<style>
+body{background:#cab}
+canvas {background: #abc}
+</style>
+</head>
+
+
+<body>
+    <button onclick="Button1()">Button 1</button>
+    <button onclick="Button2()">Button 2</button>
+    <button onclick="Button3()">Button 3</button>
+    <button onclick="Button4()">Button 4</button>
+    <button onclick="Button5()">Button 5</button>
+
+    <canvas id="rectangle" width="300px" height="300px"></canvas>
+    <script>
+        // Dessiner le rectangle
+        let r = document.getElementById("rectangle");
+        let ctx = r.getContext('2d');
+        ctx.rect(25, 25, 150, 100);
+        ctx.fill();
+
+    // Function pour le Bouton 1
+    function Button1() {
+       let tailleI = 100 ;
+        while (tailleI < 300) {
+            tailleI += 10
+        }
+    }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Menu Déroulant en Jquery</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+</head>
+
+<body>
+
+    <li> <a id="Menu1" href="#">Menu 1</a>
+        <ul id="ul1" style="display:none">
+            <li>Liste 1</li>
+            <li>Liste 2</li>
+            <li>Liste 3</li>
+            <li>Liste 4</li>
+        </ul>
+    </li>
+
+    <li> <a id="Menu2" href="#">Menu 2</a>
+        <ul id="ul2" style="display:none">
+            <li>Liste 1</li>
+            <li>Liste 2</li>
+            <li>Liste 3</li>
+            <li>Liste 4</li>
+        </ul>
+    </li>
+    <li> <a id="Menu3" href="#">Menu 3</a>
+        <ul id="ul3" style="display:none">
+            <li>Liste 1</li>
+            <li>Liste 2</li>
+            <li>Liste 3</li>
+            <li>Liste 4</li>
+        </ul>
+    </li>
+    <script>
+        $(document).ready(function () {
+            $("#Menu1").click(function () {
+                $("#ul1").toggle();
+            });
+             $("#Menu2").click(function () {
+                $("#ul2").toggle();
+            });
+            $("#Menu3").click(function () {
+                $("#ul3").toggle();
+            });           
+        });
+    </script>
+</body>
+
+</html>
