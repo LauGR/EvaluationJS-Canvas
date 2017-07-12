@@ -21,19 +21,43 @@ canvas {background: #abc}
     <canvas id="rectangle" width="300px" height="300px"></canvas>
     <script>
         // Dessiner le rectangle
-        let r = document.getElementById("rectangle");
-        let ctx = r.getContext('2d');
-        ctx.rect(25, 25, 150, 100);
-        ctx.fill();
+        let c = document.querySelector("#rectangle");
+        let ctx = c.getContext('2d');
+        ctx.fillStyle = "gold";
+        ctx.fillRect(25, 25, 150, 100);
+        
 
     // Function pour le Bouton 1
     function Button1() {
        let tailleI = 100 ;
-        while (tailleI < 300) {
+        if (tailleI < 300) {
             tailleI += 10
-        }
+        }else {
+         tailleI = 100;
+        } 
+    } 
+    
+
+    // Function pour le Bouton 2
+    function Button2() {
+   
+     
     }
 
+    // Function pour le Bouton 3
+    function Button3() {
+        
+    }
+
+    // Function pour le Bouton 4
+    function Button4() {
+        
+    }
+
+    // Function pour le Bouton 5
+    function Button5() {
+        
+    }
     </script>
 </body>
 
