@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Date du jour</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <p id="Date"></p>
+    <script>
+        function showDate() {
+            let jour = new Date();
+
+            let day =  jour.getDay();
+
+            let date = jour.getDate();
+
+            let month = jour.getMonth();
+
+            let year = jour.getFullYear();
+
+            document.write("Bienvenue,nous sommes le"+ " "+ day+ " " + date + " "+ month + " "+ year);
+        }
+        showDate();
+    </script>
+</body>
+
+</html>
